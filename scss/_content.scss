@@ -1,0 +1,87 @@
+// $text-color: yellowgreen;
+
+h1 {
+    background-color: coral;
+    color: white;
+    &:hover {
+        color: yello;
+    }
+
+}
+
+div {
+    span {
+        display: block;
+        &.latte{
+            font-size: 20px;
+            font-weight: bold;
+            color: $text-color;
+            background-color: lighten($text-color, 10%);
+
+          &:hover {
+              color: darken($text-color, 30%);
+          }
+        }
+    }
+}
+
+
+// 실무 예제
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: transparent;
+}
+/* map */
+$map-bus-color : #20af83;
+$map-metro-color : #73c74d;
+$map-hospital-color : #55b7ff;
+$map-medi-color : #4887ff;
+$map-parking-color : #71798d;
+$map-mart-color : #ff9558;
+$map-convenience-color : #b672f8;
+$map-washing-color : #36cadc;
+$map-beauty-color : #ff7cb0;
+$map-repair-color : #8d6e63;
+$map-bank-color : #3f498c;
+$map-office-color : #00695c;
+$map-infant-color : #ffb657;
+$map-preschool-color : #ff9558;
+$map-school-color : #f86b59;
+$map-view-color : #73c74d;
+$map-gate-color : #55b7ff;
+$map-appear-color : #ffb657;
+$map-convin-color : #b672f8;
+$map-edu-color : #f86b59;
+$map-life-color : #3f498c;
+$map-transport-color : #20af83;
+$map-etc-color : #ff7cb0;
+
+/* 지도 버튼 */
+$map-btns: (
+    bus: (color: $map-bus-color),                 // 버스정류장
+    metro: (color: $map-metro-color),             // 지하철역
+    hospital: (color: $map-hospital-color),       // 종합병원
+    medi: (color: $map-medi-color),               // 병원,약국
+    parking: (color: $map-parking-color),         // 주차장
+    mart: (color: $map-mart-color),               // 마트
+    convenience: (color: $map-convenience-color), // 편의점
+    washing: (color: $map-washing-color),         // 세탁소
+    repair: (color: $map-repair-color),           // 열쇠,구두수선
+    bank: (color: $map-bank-color),               // 은행
+    office: (color: $map-office-color),           // 관공서
+    infant: (color: $map-infant-color),           // 어린이집
+    preschool: (color: $map-preschool-color),     // 유치원
+    school: (color: $map-school-color),           // 학군
+    schoolpoi: (color: $map-school-color),        // 학교
+    beauty: (color: $map-beauty-color)            // 미용실
+);
+
+/* 주변 편의시설 */
+@each $map, $value in $map-btns {
+    .layer_btn_#{$map} {
+        background-color: map-get($value, color);
+        color: white;
+    }
+}

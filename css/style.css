@@ -1,0 +1,123 @@
+@charset "UTF-8";
+header {
+  background-color: #00c73c;
+}
+
+h1 {
+  background-color: coral;
+  color: white;
+}
+
+h1:hover {
+  color: yello;
+}
+
+div span {
+  display: block;
+}
+
+div span.latte {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+  background-color: #3333ff;
+}
+
+div span.latte:hover {
+  color: #000066;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: transparent;
+}
+
+/* map */
+/* 지도 버튼 */
+/* 주변 편의시설 */
+.layer_btn_bus {
+  background-color: #20af83;
+  color: white;
+}
+
+.layer_btn_metro {
+  background-color: #73c74d;
+  color: white;
+}
+
+.layer_btn_hospital {
+  background-color: #55b7ff;
+  color: white;
+}
+
+.layer_btn_medi {
+  background-color: #4887ff;
+  color: white;
+}
+
+.layer_btn_parking {
+  background-color: #71798d;
+  color: white;
+}
+
+.layer_btn_mart {
+  background-color: #ff9558;
+  color: white;
+}
+
+.layer_btn_convenience {
+  background-color: #b672f8;
+  color: white;
+}
+
+.layer_btn_washing {
+  background-color: #36cadc;
+  color: white;
+}
+
+.layer_btn_repair {
+  background-color: #8d6e63;
+  color: white;
+}
+
+.layer_btn_bank {
+  background-color: #3f498c;
+  color: white;
+}
+
+.layer_btn_office {
+  background-color: #00695c;
+  color: white;
+}
+
+.layer_btn_infant {
+  background-color: #ffb657;
+  color: white;
+}
+
+.layer_btn_preschool {
+  background-color: #ff9558;
+  color: white;
+}
+
+.layer_btn_school {
+  background-color: #f86b59;
+  color: white;
+}
+
+.layer_btn_schoolpoi {
+  background-color: #f86b59;
+  color: white;
+}
+
+.layer_btn_beauty {
+  background-color: #ff7cb0;
+  color: white;
+}
+
+footer {
+  background-color: brown;
+}
+/*# sourceMappingURL=style.css.map */
